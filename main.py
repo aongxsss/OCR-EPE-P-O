@@ -170,5 +170,4 @@ def pdf_to_jpeg_and_ocr(pdf_path):
 pdf_file_path = 'PO_Hayashi\EPE 03 143385.pdf'
 ocr_result = pdf_to_jpeg_and_ocr(pdf_file_path)
 print("-" * 100)
-print("After Clening:")
 print(ocr_result)
