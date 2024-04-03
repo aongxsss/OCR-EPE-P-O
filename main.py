@@ -152,7 +152,6 @@ def pdf_to_jpeg_and_ocr(pdf_path):
             preprocessed_image.save(image_bytes, format='PNG')
             image_bytes = image_bytes.getvalue()
             ocr_text = ocr_with_google_vision(image_bytes, client)
-            ocr_text = [text for text in ocr_text if text != "Code"]
             ocr_result[crop_position["name"]] = ocr_text
         
         elif crop_position["name"] == "Company":
@@ -167,3 +166,9 @@ def pdf_to_jpeg_and_ocr(pdf_path):
     ocr_result = clean_ocr_result(ocr_result)
     
     return str(ocr_result)
+
+pdf_file_path = 'PO_Hayashi\EPE 03 143385.pdf'
+ocr_result = pdf_to_jpeg_and_ocr(pdf_file_path)
+print("-" * 100)
+print("After Clening:")
+print(ocr_result)
