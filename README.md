@@ -7,8 +7,8 @@
 ## second step
 
 -   pip install virtualenv
--   mac: virtualenv orc_rpa , window: python -m venv ocr_rpa
--   mac: source orc_rpa/bin/activate , window: .\ocr_rpa\Scripts\Activate
+-   mac: virtualenv ocr_rpa , window: python -m venv ocr_rpa
+-   mac: source ocr_rpa/bin/activate , window: .\ocr_rpa\Scripts\Activate
 -   pip install -r requirements.txt
 
 ## third step
